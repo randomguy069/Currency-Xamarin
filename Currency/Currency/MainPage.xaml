@@ -7,7 +7,18 @@
     <StackLayout>
         <!-- Place new controls here -->
         <Label x:Name="heading" 
-               Text="Currency App"/>
+               Text="Currency App"
+               FontSize="Medium"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"/>
+        <Entry x:Name="dollarCurrency" 
+               Placeholder ="Enter currency in $"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"/>
+        <Button Text="Convert"
+                Clicked="Button_Clicked"/>
+        <Label x:Name="convertedCurrency" 
+            FontSize="Medium"/>
     </StackLayout>
 
 </ContentPage>
